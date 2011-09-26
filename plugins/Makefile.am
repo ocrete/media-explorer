@@ -318,3 +318,19 @@ plugins_LTLIBRARIES += 60mex-twitter-send.la
 60mex_twitter_send_la_CFLAGS  = -DG_LOG_DOMAIN=\"Mex-Twitter-Send\" $(PLUGIN_TWITTER_SEND_CFLAGS)
 60mex_twitter_send_la_LIBADD = $(_libadd) $(PLUGIN_TWITTER_SEND_LIBS)
 endif
+
+if USE_PLUGIN_DVB
+plugins_LTLIBRARIES += mex-dvb.la
+
+mex_dvbdir = $(plugin_datadir)/dvb
+dist_mex_dvb_DATA =
+
+mex_dvb_la_SOURCES = 		\
+	dvb/mex-dvb-plugin.c	\
+	dvb/mex-dvb-plugin.h
+mex_dvb_la_CFLAGS = 			\
+	-DG_LOG_DOMAIN=\"Mex-DVB\"	\
+	-DMEX_DATA_PLUGIN_DIR=\"$(mex_dvbdir)\"
+mex_dvb_la_LIBADD = $(_libadd)
+
+endif
