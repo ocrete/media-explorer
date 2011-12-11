@@ -50,6 +50,8 @@ mex_headers =							\
 	$(top_srcdir)/mex/mex-content-view.h			\
 	$(top_srcdir)/mex/mex-content.h				\
 	$(top_srcdir)/mex/mex-download-queue.h			\
+	$(top_srcdir)/mex/mex-dvb-defines.h			\
+	$(top_srcdir)/mex/mex-dvbt-channel.h			\
 	$(top_srcdir)/mex/mex-explorer.h			\
 	$(top_srcdir)/mex/mex-epg.h				\
 	$(top_srcdir)/mex/mex-epg-event.h			\
@@ -155,6 +157,7 @@ mex_sources =					\
 	mex-content-view.c			\
 	mex-content.c				\
 	mex-download-queue.c			\
+	mex-dvbt-channel.c			\
 	mex-epg.c				\
 	mex-epg-event.c				\
 	mex-epg-grid.c				\
