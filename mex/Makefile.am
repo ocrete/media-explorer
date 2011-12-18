@@ -200,6 +200,7 @@ mex_sources =					\
 	mex-os-@MEX_OS@.c			\
 	mex-player.c				\
 	mex-player-client.c			\
+	mex-plugin.c				\
 	mex-plugin-manager.c			\
 	mex-private.c				\
 	mex-program.c				\
