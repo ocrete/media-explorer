@@ -58,6 +58,7 @@ struct _MexModelIface
   void (*set_sort_func) (MexModel         *model,
                          MexModelSortFunc  sort_func,
                          gpointer          user_data);
+  gboolean (*is_sorted) (MexModel *model);
   guint (*get_length) (MexModel *model);
   gint  (*index)      (MexModel *model, MexContent *content);
 
@@ -77,6 +78,7 @@ void mex_model_clear (MexModel *model);
 void mex_model_set_sort_func (MexModel         *model,
                               MexModelSortFunc  sort_func,
                               gpointer          user_data);
+gboolean mex_model_is_sorted (MexModel *model);
 guint mex_model_get_length (MexModel *model);
 gint  mex_model_index      (MexModel   *model,
                             MexContent *content);
