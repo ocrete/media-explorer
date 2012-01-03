@@ -16,9 +16,8 @@
  * along with this program; if not, see <http://www.gnu.org/licenses>
  */
 
-
-#ifndef _MEX_H
-#define _MEX_H
+#ifndef __MEX_H__
+#define __MEX_H__
 
 #include <glib.h>
 
@@ -102,5 +101,4 @@
 
 #include <mex/mex-enum-types.h>
 
-#endif
-
+#endif /* __MEX_H__ */

@@ -23,8 +23,8 @@
 #include <mex/mex-model.h>
 #include <mex/mex-model-manager.h>
 
-#ifndef _MEX_UTILS_H
-#define _MEX_UTILS_H
+#ifndef __MEX_UTILS_H__
+#define __MEX_UTILS_H__
 
 typedef enum
 {
@@ -118,4 +118,4 @@ MexContent *mex_content_from_uri (const gchar *uri);
 
 GKeyFile *mex_get_settings_key_file (void);
 
-#endif /* _MEX_UTILS_H */
+#endif /* __MEX_UTILS_H__ */
