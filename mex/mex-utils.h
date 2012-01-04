@@ -26,6 +26,8 @@
 #ifndef __MEX_UTILS_H__
 #define __MEX_UTILS_H__
 
+G_BEGIN_DECLS
+
 typedef enum
 {
   MEX_TEXTURE_FRAME_EMPTY        = 0,
@@ -117,5 +119,7 @@ gboolean mex_actor_has_focus (MxFocusManager *manager,
 MexContent *mex_content_from_uri (const gchar *uri);
 
 GKeyFile *mex_get_settings_key_file (void);
+
+G_END_DECLS
 
 #endif /* __MEX_UTILS_H__ */
