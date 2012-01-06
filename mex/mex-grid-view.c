@@ -16,9 +16,18 @@
  * along with this program; if not, see <http://www.gnu.org/licenses>
  */
 
+#include <glib/gi18n.h>
+
 #include "mex-grid-view.h"
 #include "mex-scene.h"
-#include <glib/gi18n.h>
+#include "mex-proxy.h"
+#include "mex-menu.h"
+#include "mex-shadow.h"
+#include "mex-scroll-view.h"
+#include "mex-grid.h"
+#include "mex-content-box.h"
+#include "mex-queue-model.h"
+#include "mex-content-proxy.h"
 
 /* defines */
 #define MENU_MIN_WIDTH 284.0
